@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #ccff99;
+  font-family: Optima, sans-serif;
+}
+
+header {
+  background-color: #666699;
+  text-align: center;
+}
+
+h1 {
+  color: #f0f0f5;
+  font-size: 50px;
+  padding: 15px;
+  margin: 0;
+}
+
+.subtitle {
+  padding: 0px;
+  background-color: #9595b7;
+  border: white solid 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+  border-right: 50px;
+  width: 90%;
+  background-color: #666699;
+}
+
+.form {
+  border: white solid 1px;
+  color: #f0f0f5;
+  background-color: #ff4da6;
+}
+
+label {
+  font-size: 30px;
+}
+
+input {
+  font-size: 25px;
+  height: 30px;
+  margin: 15px 3px;
+}
+
+button {
+  margin: 10px 0 20px 0;
+  font-size: 30px;
+}
+
+.inputsDisplayed {
+  padding: 1px;
+  background-color: #668cff;
+  color: #f0f0f5;
+  border-bottom: white solid 1px;
+}
+
+p {
+  font-size: 25px;
+}
+
+h2 {
+  color: #f0f0f5;
+}
+
+.resultsBox {
+  border: solid white 1px;
+  color: #f0f0f5;
+  background-color: #9933ff;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
