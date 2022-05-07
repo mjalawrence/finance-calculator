@@ -10,6 +10,7 @@ const InputMonthlyPercentage = ({value, change}) => {
             onChange={change}
         />
     )
+
 }
 
 export default InputMonthlyPercentage
