@@ -4,7 +4,7 @@ const InputBorrowAmounts = ({value, change}) => {
         <input
             type="number"
             placeholder="10000"
-            min="1"
+            min="15"
             value={value}
             onChange={change}
         />
