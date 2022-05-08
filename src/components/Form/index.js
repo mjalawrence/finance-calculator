@@ -1,7 +1,5 @@
 import SubmitButton from "./SubmitButton";
-import InputBorrowAmounts from "./InputBorrowAmounts";
-import InputAnnualSalary from "./InputAnnualSalary";
-import InputMonthlyPercentage from "./InputMonthlyPercentage";
+import MainInputs from "./MainInputs";
 import {useEffect, useState} from "react";
 
 //Question:
@@ -16,9 +14,11 @@ import {click} from "@testing-library/user-event/dist/click";
 
 const Form = () => {
     const [click, setClick] = useState(0)
+
     const [borrowAmount, setBorrowAmount] = useState('')
     const [annualSalary, setAnnualSalary] = useState('')
     const [monthlyRepay, setMonthlyRepay] = useState('')
+
     const [toPayPerMonth, setToPayPerMonth] = useState('')
     const [payOffTimeMonths, setPayOffTimeMonths] = useState('')
     const [payOffTimeYears, setPayOffTimeYears] = useState('')
@@ -76,15 +76,15 @@ const Form = () => {
                 {/*I tried setting min/max for monthly percentage but wouldn't work*/}
                 <div>
                     <label>Amount to Borrow: £</label>
-                    <InputBorrowAmounts value={borrowAmount} change={inputBorrowAmount} />
+                    <MainInputs value={borrowAmount} change={inputBorrowAmount} />
                 </div>
                  <div>
                     <label>Expected Annual Salary: £</label>
-                    <InputAnnualSalary value={annualSalary} change={inputAnnualSalary} />
+                    <MainInputs value={annualSalary} change={inputAnnualSalary} />
                 </div>
                 <div>
                     <label>Percentage of monthly salary towards repayment:
-                    <InputMonthlyPercentage value={monthlyRepay} change={inputMonthlyRepay} />%</label>
+                    <MainInputs value={monthlyRepay} change={inputMonthlyRepay} />%</label>
                 </div>
                 <div>
                     <SubmitButton clicker={submitAmounts} />
